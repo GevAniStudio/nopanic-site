@@ -443,7 +443,7 @@ button {
 }
 
 .section {
-  padding: 110px 0;
+  padding: 80px 0;
   position: relative;
 }
 
@@ -479,7 +479,7 @@ button {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
@@ -499,8 +499,8 @@ button {
 }
 
 .feature-icon {
-  width: 54px;
-  height: 54px;
+  width: 46px;
+  height: 46px;
   border-radius: 16px;
   display: inline-flex;
   align-items: center;
@@ -704,13 +704,13 @@ button {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .contact-card {
-  padding: 26px;
-  min-height: 150px;
+  padding: 15px;
+  min-height: 80px;
   transition: 0.25s ease;
 }
 
@@ -721,6 +721,12 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
+}
+
+.img-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
 }
 
 .contact-card strong {
@@ -844,9 +850,14 @@ button {
   .why-grid,
   .about-grid,
   .timeline,
-  .contact-grid,
+  /* .contact-grid, */
   .hero-stats {
     grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .hero-copy {
@@ -869,7 +880,7 @@ button {
   }
 
   .section {
-    padding: 90px 0;
+    padding: 50px 0;
   }
 
   .footer-inner {
@@ -897,6 +908,22 @@ button {
     height: 46px;
   }
 
+  .hero {
+    padding: 24px 0 20px;
+  }
+
+  .hero-stats {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .hero-logo {
+    width: min(80%, 280px);
+  }
+
   .hero-copy h1 {
     letter-spacing: -1px;
   }
@@ -919,10 +946,14 @@ button {
 
   .feature-card,
   .timeline-card,
-  .contact-card,
+  /* .contact-card, */
   .why-panel,
   .buy-box {
     padding: 24px 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .faq-item summary,
