@@ -1,427 +1,460 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="description"
+      content="$NoPanic is a Solana community project built around calm execution, strong identity, and long-term vision."/>
     <title>$NoPanic Token</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
+    <link rel="stylesheet" href="style.css"/>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJ2ZRGM67"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJ2ZRGM67"></script>
 
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-HFJ2ZRGM67');
-</script>
-    
-</head>
-<body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-grid"></div>
+        gtag('config', 'G-HFJ2ZRGM67');
+    </script>
 
-    <header class="header">
-    <div class="container nav">
-        <a href="#" class="brand">
-        <img src="logo.png" alt="$NoPanic logo" class="brand-logo" />
-        <div class="brand-text">
-            <span class="brand-name">$NoPanic</span>
-            <span class="brand-sub">NO FEAR • ONLY ACTION</span>
-        </div>
+  </head>
+  <body>
+    <div class="page-noise"></div>
+    <div class="space-glow glow-a"></div>
+    <div class="space-glow glow-b"></div>
+    <div class="space-glow glow-c"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="$NoPanic home">
+          <img src="logo.png" alt="$NoPanic logo" class="brand-logo" />
+          <div>
+            <strong>$NoPanic</strong>
+            <span>Calm movement on Solana</span>
+          </div>
         </a>
 
-        <nav class="menu">
-        <a href="#about">About</a>
-        <!-- <a href="#why">Why</a> -->
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contacts">Contacts</a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#proof">Proof</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#contacts">Contacts</a>
         </nav>
 
-        <a href="#buy" class="nav-cta">Buy Coin</a>
+        <a class="header-action" href="#buy">Launch Status</a>
 
-        <button class="menu-toggle" aria-label="Open menu" id="menuToggle">
-        <span></span>
-        <span></span>
+        <button
+          class="menu-button"
+          id="menuButton"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
         </button>
-    </div>
+      </div>
 
-    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-nav" id="mobileNav">
         <a href="#about">About</a>
-        <!-- <a href="#why">Why</a> -->
+        <a href="#proof">Proof</a>
         <a href="#roadmap">Roadmap</a>
-        <!-- <a href="#faq">FAQ</a> -->
         <a href="#contacts">Contacts</a>
-        <a href="#buy" class="nav-cta mobile-cta">Buy Coin</a>
-    </div>
+        <a href="#buy">Launch Status</a>
+      </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-            <div class="hero-copy">
-                <div class="eyebrow">
-                $NoPanic • Community • Identity • Momentum
-                </div>
-
-                <h1>
-                Stay calm.<br />
-                <span
-                    >Move with<br />
-                    $NoPanic.</span
-                >
-                </h1>
-
-                <p class="hero-text">
-                $NoPanic is a mindset. No fear. No noise. Just execution. Stay
-                focused. Move forward. Strong visual identity. Strong narrative.
-                </p>
-
-                <div class="hero-actions">
-                <a href="#buy" class="btn btn-primary">Buy $NoPanic</a>
-                <a href="#about" class="btn btn-secondary">Explore Project</a>
-                </div>
-
-                <div class="hero-stats">
-                <div class="stat-card">
-                    <span class="stat-label">Focus</span>
-                    <strong>Community</strong>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">Style</span>
-                    <strong>Recognizable</strong>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">Energy</span>
-                    <strong>High Signal</strong>
-                </div>
-                </div>
+    <main id="top">
+      <section class="hero section-hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              Community • Identity • Momentum
             </div>
 
-            <div class="hero-visual">
-                <div class="hero-logo-ring"></div>
-                <div class="hero-logo-glow"></div>
-                <img src="logo.png" alt="$NoPanic logo" class="hero-logo" />
-            </div>
-            </div>
-        </section>
+            <h1>
+              Stay calm.
+              <span>Built with focus. No Panic.</span>
+            </h1>
 
-        <section class="ticker-wrap">
-            <div class="ticker">
-            <span>$NoPanic</span>
-            <span>NO FEAR</span>
-            <span>ONLY ACTION</span>
-            <span>COMMUNITY FIRST</span>
-            <span>STRONG IDENTITY</span>
-            <span>$NoPanic</span>
-            <span>NO FEAR</span>
-            <span>ONLY ACTION</span>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-            <div class="section-head">
-                <span class="section-tag">ABOUT</span>
-                <h2>
-                Not just a token. A mindset, a signal, and a brand people remember.
-                </h2>
-                <p>
-                $NoPanic is more than a token idea. It is a clear identity, a calm
-                mindset, and a visual movement built to stand out. We focus on culture,
-                presence, and steady growth without noise.
-                </p>
-            </div>
-
-            <div class="about-grid">
-                <article class="glass-card feature-card">
-                <div class="feature-icon">01</div>
-                <h3>Identity</h3>
-                <p>
-                    A project people can recognize instantly. Strong visuals, clear message,
-                    and a style that stays in memory.
-                </p>
-                </article>
-
-                <article class="glass-card feature-card">
-                <div class="feature-icon">02</div>
-                <h3>Community</h3>
-                <p>
-                    Real energy comes from people. Every supporter, post, and interaction
-                    helps shape the movement.
-                </p>
-                </article>
-
-                <article class="glass-card feature-card">
-                <div class="feature-icon">03</div>
-                <h3>Momentum</h3>
-                <p>
-                    Growth is built step by step. Consistency creates attention, and attention
-                    turns into presence.
-                </p>
-                </article>
-
-                <article class="glass-card feature-card">
-                <div class="feature-icon">04</div>
-                <h3>Direction</h3>
-                <p>
-                    No noise. No random moves. Just a clear path, steady focus, and long-term
-                    vision.
-                </p>
-                </article>
-            </div>
-            </div>
-        </section>
-
-        <!-- <section id="why" class="section section-alt">
-        <div class="container why-grid">
-            <div class="why-copy">
-            <span class="section-tag">WHY $NoPanic</span>
-            <h2>Built for attention. Designed for growth.</h2>
-            <p>
-                The best projects feel alive. $NoPanic is built around that idea:
-                visual pressure, cultural presence, simple message, strong recall.
+            <p class="hero-lead">
+              $NoPanic is a community-first Solana project with a clear
+              identity, recognizable visuals, and a long-term mindset. We do not
+              rush the signal - just a clear idea, consistent work, and people
+              moving in the same direction.
             </p>
 
-            <div class="why-list">
-                <div class="why-item">
-                <span class="why-bullet"></span>
-                <div>
-                    <h4>Clear visual language</h4>
-                    <p>Your logo and colors already create a strong first impression.</p>
-                </div>
-                </div>
-
-                <div class="why-item">
-                <span class="why-bullet"></span>
-                <div>
-                    <h4>Easy to remember</h4>
-                    <p>The name and message are simple, emotional, and highly reusable.</p>
-                </div>
-                </div>
-
-                <div class="why-item">
-                <span class="why-bullet"></span>
-                <div>
-                    <h4>Built around movement</h4>
-                    <p>Content, memes, posts, and community action can all reinforce the same core idea.</p>
-                </div>
-                </div>
+            <div class="hero-actions">
+              <a href="#contacts" class="btn btn-primary">Join Community</a>
+              <a href="#about" class="btn btn-ghost">Explore Project</a>
             </div>
-            </div> -->
 
-        <!-- <div class="why-panel glass-card">
-            <div class="panel-line"></div>
-            <h3>Core Message</h3>
-            <p class="panel-quote">
-                “When others panic, we build.”
-            </p>
-
-            <div class="mini-cards">
-                <div class="mini-card">
-                <span>Brand</span>
-                <strong>Strong</strong>
-                </div>
-                <div class="mini-card">
-                <span>Visuals</span>
-                <strong>Memorable</strong>
-                </div>
-                <div class="mini-card">
-                <span>Message</span>
-                <strong>Simple</strong>
-                </div>
-                <div class="mini-card">
-                <span>Audience</span>
+            <div class="hero-metrics" aria-label="Project focus points">
+              <div>
                 <strong>Community</strong>
-                </div>
+                <p>Drives It. Without people, there is no movement.</p>
+              </div>
+              <div>
+                <strong>Execution Over Talk</strong>
+                <p>We build more than we speak.</p>
+              </div>
+              <div>
+                <strong>Vision Over Hype</strong>
+                <p>We focus on what lasts.</p>
+              </div>
             </div>
+          </div>
+
+          <div class="hero-art reveal">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <img src="logo.png" alt="$NoPanic moon logo" class="main-logo" />
+            <div class="floating-card card-top">
+              <span>Signal</span>
+              <strong>No fear</strong>
             </div>
+            <div class="floating-card card-bottom">
+              <span>Direction</span>
+              <strong>Only action</strong>
+            </div>
+          </div>
         </div>
-        </section> -->
+      </section>
 
-        <section id="roadmap" class="section">
-            <div class="container">
-            <div class="section-head">
-                <span class="section-tag">ROADMAP</span>
-                <h2>Execution over noise.</h2>
-                <p>Each phase moves the project forward. No distractions.</p>
-            </div>
+      <section class="ticker" aria-label="Brand ticker">
+        <div class="ticker-track">
+          <span>No Panic</span><span>Community First</span
+          ><span>Calm Execution</span><span>Strong Identity</span>
+          <span>No Panic</span><span>Community First</span
+          ><span>Calm Execution</span><span>Strong Identity</span>
+          <span>No Panic</span><span>Community First</span
+          ><span>Calm Execution</span><span>Strong Identity</span>
+          <span>No Panic</span><span>Community First</span
+          ><span>Calm Execution</span><span>Strong Identity</span>
+        </div>
+      </section>
 
-            <div class="timeline">
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 01</span>
-                <h3>Foundation</h3>
-                <p>
-                    • Build core idea and identity <br />
-                    • Launch Telegram & Discord communities <br />
-                    • Grow initial audience organically <br />
-                    • Create content, memes, and narrative <br />
-                </p>
-                </article>
+      <section id="about" class="section">
+        <div class="container split-layout">
+          <div class="section-copy reveal">
+            <span class="section-kicker">About the project</span>
+            <h2>
+              Not just a token. A mood. <br />
+              A signal. A movement.
+            </h2>
+            <p>
+              No Panic is built around a simple idea: when the market becomes
+              emotional, the strongest communities stay calm, focused, and
+              consistent.
+            </p>
+          </div>
 
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 02</span>
-                <h3>Community Expansion</h3>
-                <p>
-                    • Strengthen community engagement <br />
-                    • Collaborations and partnerships <br />
-                    • Viral content and social presence <br />
-                    • Community-driven activities & events <br />
-                </p>
-                </article>
+          <div class="focus-panel reveal">
+            <div class="panel-line"></div>
+            <p>
+              <strong>Beyond the Market.</strong>
+              This isn’t just about charts. As $PANIC grows, we aim to direct
+              part of its energy toward real-world impact through charitable
+              support. Community strength and market performance will define how
+              far this can go. No rush. Just real impact.
+            </p>
+          </div>
+        </div>
 
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 03</span>
-                <h3>Ecosystem Preparation</h3>
-                <p>
-                    • Finalize token structure <br />
-                    • Prepare infrastructure <br />
-                    • Strategic positioning in the market <br />
-                    • Strengthen core team and roles <br />
-                </p>
-                </article>
+        <div class="container cards-grid">
+          <article class="info-card reveal">
+            <span class="card-number">01</span>
+            <h3>Brand Identity</h3>
+            <p>
+              A memorable name, a strong logo, and a visual universe that can
+              grow across posts, memes, merch, and community culture.
+            </p>
+          </article>
+          <article class="info-card reveal">
+            <span class="card-number">02</span>
+            <h3>Community Energy</h3>
+            <p>
+              The project is built around people. Every supporter, comment,
+              idea, and share strengthens the movement.
+            </p>
+          </article>
+          <article class="info-card reveal">
+            <span class="card-number">03</span>
+            <h3>Real Work</h3>
+            <p>
+              We focus on steady growth, honest communication, and visible
+              effort instead of empty hype or fake noise.
+            </p>
+          </article>
+        </div>
+      </section>
 
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 04</span>
-                <h3>Launch & Growth</h3>
-                <p>
-                    • Token launch on Solana <br />
-                    • Liquidity setup <br />
-                    • Community expansion at scale <br />
-                    • Marketing push and visibility <br />
-                </p>
-                </article>
+      <section id="proof" class="section proof-section">
+        <div class="container">
+          <div class="section-center reveal">
+            <span class="section-kicker">Proof of Work</span>
+            <h2>Built to feel alive.</h2>
+            <p>
+              This is not a static page.
+              It’s an active project with real movement, structure, and daily attention.
+            </p>
+          </div>
 
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 05</span>
-                <h3>Long-Term Vision</h3>
-                <p>
-                    • Brand expansion <br />
-                    • Utility development <br />
-                    • Strategic partnerships <br />
-                    • Building a lasting ecosystem <br />
-                </p>
-                </article>
+          <div class="proof-grid">
+            <article class="proof-card reveal">
+              <div class="proof-icon">✦</div>
+              <h3>Social Presence</h3>
+              <p>
+                Telegram, Discord, and X are not just links.
+                They are where the community lives and grows.
+              </p>
+            </article>
+            <article class="proof-card reveal">
+              <div class="proof-icon">●</div>
+              <h3>Content Engine</h3>
+              <p>
+                Content is created continuously.
+                Visuals. Ideas. Community activity.
+                Everything works together to maintain momentum.
+              </p>
+            </article>
+            <article class="proof-card reveal">
+              <div class="proof-icon">◆</div>
+              <h3>Long-Term Mindset</h3>
+              <p>
+                Not built for one moment.
+                Built to last, grow, and become recognizable.
+              </p>
+            </article>
+            <article class="proof-card reveal">
+              <div class="proof-icon">↗</div>
+              <h3>Clear Direction</h3>
+              <p>
+                No confusion. No empty promises.
+                Step by step. Calm execution. Visible progress.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                <article class="timeline-card glass-card">
-                <span class="timeline-step">PHASE 06</span>
-                <h3>Dominance</h3>
-                <p>
-                    • Not just visible. <br />
-                    • Unavoidable. <br />
-                </p>
-                </article>
-            </div>
-            </div>
-        </section>
+      <section class="section statement-section">
+        <div class="container statement-card reveal">
+          <img src="logo.png" alt="$NoPanic logo" />
+          <div>
+            <span class="section-kicker">Core message</span>
+            <h2>When others panic, we build.</h2>
+            <p>
+              No fear. No noise. Just execution, consistency, and community.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="contacts" class="section">
-            <div class="container">
-            <div class="section-head">
-                <span class="section-tag">CONTACTS</span>
-                <h2>Join the movement</h2>
-                <p>Stay connected with No Panic across all platforms.</p>
-            </div>
+      <section id="roadmap" class="section">
+        <div class="container section-center reveal">
+          <span class="section-kicker">Roadmap</span>
+          <h2>Step by step. No rush.</h2>
+          <p>
+            Each phase is designed to move the project from identity to
+            community, then from community to wider visibility.
+          </p>
+        </div>
 
-            <div class="contact-grid">
-                <a
-                href="https://x.com/no_panic_tok"
-                target="_blank"
-                class="contact-card glass-card"
-                >
-                <img src="icon-X.png" alt="X" class="img-icon"/>
-                <span class="contact-label">X (Twitter)</span>
-                <p>Follow our latest updates and daily posts</p>
-                </a>
+        <div class="container roadmap">
+          <article class="roadmap-card reveal">
+            <span>Phase 01</span>
+            <h3>Foundation</h3>
+            <p>
+              Identity, website, social channels, content direction, community
+              base.
+            </p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Phase 02</span>
+            <h3>Community Growth</h3>
+            <p>
+              Engagement, contests, organic posts, X, Telegram and Discord
+              activity.
+            </p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Phase 03</span>
+            <h3>Market Preparation</h3>
+            <p>
+              Token structure, launch planning, platform readiness, clear
+              communication.
+            </p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Phase 04</span>
+            <h3>Launch</h3>
+            <p>
+              Public launch, visibility push, community support, liquidity path.
+            </p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Phase 05</span>
+            <h3>Expansion</h3>
+            <p>
+              Stronger content, partnerships, brand assets, broader social
+              presence.
+            </p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Phase 06</span>
+            <h3>Dominance</h3>
+            <p>
+              Build lasting recognition. Become a constant presence. Not just
+              visible — unavoidable.
+            </p>
+          </article>
+        </div>
+      </section>
 
-                <a
-                href="https://t.me/no_panic_token"
-                target="_blank"
-                class="contact-card glass-card"
-                >
-                <img src="icon-TG.png" alt="Telegram" class="img-icon"/>
-                <span class="contact-label">Telegram</span>
-                <p>Join our community and stay close to the movement</p>
-                </a>
+      <section id="contacts" class="section contact-section">
+        <div class="container section-center reveal">
+          <span class="section-kicker">Contacts</span>
+          <h2>Join the No Panic network.</h2>
+          <p>
+            Follow the project, join the community, and stay close to the
+            movement.
+          </p>
+        </div>
 
-                <a
-                href="https://www.tiktok.com/@nopanic_token?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                class="contact-card glass-card"
-                >
-                <img src="icon-TikTok.png" alt="TikTok" class="img-icon"/>
-                <span class="contact-label">TikTok</span>
-                <p>Watch short videos and No Panic content</p>
-                </a>
+        <div class="container contact-grid">
+          <a
+            href="https://x.com/no_panic_tok"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card reveal"
+          >
+            <img src="icon-X.png" alt="X icon" />
+            <strong>X (Twitter)</strong>
+            <!-- <span>Updates and posts</span> -->
+          </a>
 
-                <a
-                href="https://discord.gg/H7ESNC3G"
-                target="_blank"
-                class="contact-card glass-card"
-                >
-                <img src="icon-Discord.png" alt="Discord" class="img-icon"/>
-                <span class="contact-label">Discord</span>
-                <p>Join server</p>
-                </a>
+          <a
+            href="https://t.me/no_panic_token"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card reveal"
+          >
+            <img src="icon-TG.png" alt="Telegram icon" />
+            <strong>Telegram</strong>
+            <!-- <span>Main community</span> -->
+          </a>
 
-                <a
-                href="mailto:nopanictoken@gmail.com"
-                target="_blank"
-                class="contact-card glass-card"
-                >
-                <img src="icon-Email.png" alt="Email" class="img-icon"/>
-                <span class="contact-label">Email</span>
-                <p>For contact, ideas and collaborations</p>
-                </a>
-            </div>
-            </div>
-        </section>
+          <!-- <a href="https://www.tiktok.com/@nopanic_token?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+          <img src="icon-TikTok.png" alt="TikTok icon" />
+          <strong>TikTok</strong>
+          <span>Short content</span>
+        </a> -->
 
-        <section id="buy" class="section buy-section">
-            <div class="container">
-            <div class="buy-box glass-card">
-                <span class="section-tag">BUY</span>
-                <h2>Enter $NoPanic</h2>
-                <p>Soon . . .</p>
-                <a href="#" class="btn btn-primary buy-big">Buy $NoPanic</a>
-            </div>
-            </div>
-        </section>
+          <a
+            href="https://discord.gg/H7ESNC3G"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card reveal"
+          >
+            <img src="icon-Discord.png" alt="Discord icon" />
+            <strong>Discord</strong>
+            <!-- <span>Server and roles</span> -->
+          </a>
+
+          <a href="mailto:nopanictoken@gmail.com" class="contact-card reveal">
+            <img src="icon-Email.png" alt="Email icon" />
+            <strong>Email</strong>
+            <!-- <span>Contact and ideas</span> -->
+          </a>
+        </div>
+      </section>
+
+      <section id="buy" class="section buy-section">
+        <div class="container buy-card reveal">
+          <span class="section-kicker">Launch status</span>
+          <h2>$NoPanic is preparing for launch.</h2>
+          <p>
+            The token is not live yet. We are building the community, identity,
+            and foundation first. Official launch information will be shared
+            only through our verified channels.
+          </p>
+          <button class="btn btn-disabled" type="button" disabled>
+            Buy Soon
+          </button>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-    <div class="container footer-inner">
-        <div class="footer-brand">
-        <img src="logo.png" alt="$NoPanic logo" class="footer-logo" />
-        <div>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <a class="footer-brand" href="#top">
+          <img src="logo.png" alt="$NoPanic logo" />
+          <div>
             <strong>$NoPanic</strong>
-            <p>No fear. Only Action.</p>
-        </div>
-        </div>
-
-        <p class="footer-copy">© 2026 $NoPanic. All rights reserved.</p>
-    </div>
+            <span>No fear. Only action.</span>
+          </div>
+        </a>
+        <p>
+          © 2026 $NoPanic. Built with respect for the community. <br />
+          Gevorg - Creator. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mobileMenu = document.getElementById("mobileMenu");
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
 
-    menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
-        menuToggle.classList.toggle("active");
-    });
+      menuButton.addEventListener("click", () => {
+        const isOpen = mobileNav.classList.toggle("open");
+        menuButton.classList.toggle("open", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
 
-    mobileMenu.querySelectorAll("a").forEach((link) => {
+      mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
-        menuToggle.classList.remove("active");
+          mobileNav.classList.remove("open");
+          menuButton.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
         });
-    });
-    </script>
+      });
 
-</body>
+      const revealItems = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 },
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+
+
+      document.addEventListener("click", (event) => {
+        const isClickInsideMenu = mobileNav.contains(event.target);
+        const isClickOnButton = menuButton.contains(event.target);
+
+        if (
+          mobileNav.classList.contains("open") &&
+          !isClickInsideMenu &&
+          !isClickOnButton
+        ) {
+          mobileNav.classList.remove("open");
+          menuButton.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+        }
+      });
+
+    </script>
+  </body>
 </html>
