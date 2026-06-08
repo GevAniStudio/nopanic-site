@@ -900,6 +900,82 @@ button {
   transform: translateY(0);
 }
 
+.buy-card-live {
+  border-color: rgba(207, 255, 77, 0.32);
+}
+
+.launch-details {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+  margin: 28px auto 0;
+  text-align: left;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.detail-row span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.detail-row strong,
+.detail-row code {
+  color: var(--text);
+  font-weight: 850;
+}
+
+.ca-row code {
+  overflow: hidden;
+  color: var(--lime);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy-ca {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  color: #111608;
+  background: linear-gradient(135deg, var(--lime), var(--green));
+  cursor: pointer;
+  font-weight: 950;
+}
+
+.copy-ca.copied {
+  background: var(--blue);
+}
+
+.buy-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.buy-actions .btn {
+  margin-top: 0;
+}
+
+.launch-note {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 @media (max-width: 1100px) {
   .hero-grid,
   .split-layout {
@@ -1059,5 +1135,17 @@ button {
 
   .contact-card {
     min-height: 100px;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .copy-ca {
+    width: 100%;
+  }
+  
+  .buy-actions .btn {
+    width: 100%;
   }
 }
