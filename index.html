@@ -45,7 +45,7 @@
           <a href="#contacts">Contacts</a>
         </nav>
 
-        <a class="header-action" href="#buy">Launch Status</a>
+        <a class="header-action" href="#buy">Buy $NOPA</a>
 
         <button
           class="menu-button"
@@ -157,7 +157,7 @@
             <div class="panel-line"></div>
             <p>
               <strong>Beyond the Market.</strong>
-              This isn’t just about charts. As $PANIC grows, we aim to direct
+              This isn’t just about charts. As $NOPA grows, we aim to direct
               part of its energy toward real-world impact through charitable
               support. Community strength and market performance will define how
               far this can go. No rush. Just real impact.
@@ -374,20 +374,52 @@
         </div>
       </section>
 
-      <section id="buy" class="section buy-section">
-        <div class="container buy-card reveal">
-          <span class="section-kicker">Launch status</span>
-          <h2>$NoPanic is preparing for launch.</h2>
-          <p>
-            The token is not live yet. We are building the community, identity,
-            and foundation first. Official launch information will be shared
-            only through our verified channels.
-          </p>
-          <button class="btn btn-disabled" type="button" disabled>
-            Buy Soon
+  <section id="buy" class="section buy-section">
+    <div class="container buy-card buy-card-live reveal">
+      <span class="section-kicker">Live on Pump.fun</span>
+
+      <h2>$NoPanic is now live.</h2>
+
+      <p>
+        The official $NOPA token has launched on Pump.fun. Use only verified
+        links and always check the contract address before trading.
+      </p>
+
+      <div class="launch-details" aria-label="Official launch details">
+        <div class="detail-row">
+          <span>Network</span>
+          <strong>Solana</strong>
+        </div>
+
+        <div class="detail-row">
+          <span>Platform</span>
+          <strong>Pump.fun</strong>
+        </div>
+
+        <div class="detail-row ca-row">
+          <span>Contract Address</span>
+          <code id="contractAddress">AokwwEw3aoxzLtGc8vvbycaooThauRFmddeS4naKpump</code>
+          <button class="copy-ca" type="button" data-copy-target="contractAddress">
+            Copy CA
           </button>
         </div>
-      </section>
+      </div>
+
+      <div class="buy-actions">
+        <a
+          class="btn btn-primary"
+          href="https://pump.fun/coin/AokwwEw3aoxzLtGc8vvbycaooThauRFmddeS4naKpump"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Buy on Pump.fun
+        </a>
+      </div>
+
+      <p class="launch-note">No fear. Verify first.</p>
+    </div>
+  </section>
+      
     </main>
 
     <footer class="site-footer">
@@ -454,6 +486,41 @@
           menuButton.setAttribute("aria-expanded", "false");
         }
       });
+
+      const copyButtons = document.querySelectorAll("[data-copy-target]");
+
+    copyButtons.forEach((button) => {
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-copy-target");
+        const target = document.getElementById(targetId);
+        const value = target?.textContent.trim();
+  
+        if (!value) return;
+  
+        try {
+          await navigator.clipboard.writeText(value);
+        } catch {
+          const textarea = document.createElement("textarea");
+          textarea.value = value;
+          textarea.setAttribute("readonly", "");
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          textarea.remove();
+        }
+  
+        const originalText = button.textContent;
+        button.textContent = "Copied";
+        button.classList.add("copied");
+  
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.classList.remove("copied");
+        }, 1600);
+      });
+    });
 
     </script>
   </body>
